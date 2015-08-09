@@ -1,9 +1,11 @@
-<div id='records'>
+<% content_for :subnav do %>
+  <%= render 'actions' %>
+<% end %>
+
+<div id='records' class="ui segment">
   <%= render 'records' %>
 </div>
-<div id='actions'>
-  <%= render 'actions' %>
-</div>
+
 <% content_for :javascripts do %>
   <script>
     $(document).ready(function() {
